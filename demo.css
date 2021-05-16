@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+.all {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #fff;
+    background-image: url(Capture.PNG);
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    cursor: pointer;
+    transition: all 200ms linear;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.newsphoto {
+    width: 50%;
+    height: 100vh;
+    float: left;
+}
+
+.link {
+    color: #fff;
+}
+
+.link:hover {
+    color: #2a2b38;
+}
+
+p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+h4 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+h6 span {
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #2a2b38;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.full-height {
+    min-height: 100vh;
+}
+
+.card-3d-wrap {
+    position: relative;
+    width: 400px;
+    max-width: 100%;
+    height: 350px;
+    /* -webkit-transform-style: preserve-3d; */
+    transform-style: preserve-3d;
+    perspective: 800px;
+    margin-top: 40px;
+}
+
+.card-3d-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* -webkit-transform-style: preserve-3d; */
+    transform-style: preserve-3d;
+    transition: all 600ms ease-out;
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 140%;
+    background-color: #F18F02;
+    position: absolute;
+    border-radius: 6px;
+    left: 0;
+    top: 0;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+/* 
+.card-back {
+    transform: rotateY(180deg);
+} */
+
+.checkbox:checked~.card-3d-wrap .card-3d-wrapper {
+    transform: rotateY(180deg);
+}
+
+.center-wrap {
+    position: absolute;
+    width: 100%;
+    padding: 0 35px;
+    top: 50%;
+    left: 0;
+    transform: translate3d(0, -50%, 35px) perspective(100px);
+    z-index: 20;
+    display: block;
+}
+
+.form-group {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.form-style {
+  
+    padding: 13px 20px;
+    padding-left: 55px;
+    margin-bottom: 15px;
+    height: 48px;
+    width: 100%;
+    font-weight: 500;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    outline: none;
+    color: #c4c3ca;
+    background-color: #1f2029;
+    border: none;
+    transition: all 200ms linear;
+    box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
+}
+
+.form-style:focus,
+.form-style:active {
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
+}
+
+.input-icon {
+    position: absolute;
+    top: 10;
+    left: 18px;
+    height: 48px;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: left;
+    color: #d71e3d;
+    transition: all 200ms linear;
+}
+
+.form-group input:-ms-input-placeholder {
+    color: #c4c3ca;
+    opacity: 0.7;
+    transition: all 200ms linear;
+}
+
+.form-group input::-moz-placeholder {
+    color: #c4c3ca;
+    opacity: 0.7;
+    transition: all 200ms linear;
+}
+
+.form-group input:-moz-placeholder {
+    color: #c4c3ca;
+    opacity: 0.7;
+    transition: all 200ms linear;
+}
+
+.form-group input::-webkit-input-placeholder {
+    color: #c4c3ca;
+    opacity: 0.7;
+    transition: all 200ms linear;
+}
+
+.form-group input:focus:-ms-input-placeholder {
+    opacity: 0;
+    transition: all 200ms linear;
+}
+
+.form-group input:focus::-moz-placeholder {
+    opacity: 0;
+    transition: all 200ms linear;
+}
+
+.form-group input:focus:-moz-placeholder {
+    opacity: 0;
+    transition: all 200ms linear;
+}
+
+.form-group input:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: all 200ms linear;
+}
+
+.btn {
+ 
+    border-radius: 4px;
+    height: 35px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 200ms linear;
+    padding: 15px 30px;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    text-align: center;
+    border: none;
+    background-color: #2a2b38;
+    color: #fff;
+    margin-top: 10px;
+    box-shadow: 0 8px 24px 0 rgba(18, 248, 173, .2);
+}
+
+.btn:active,
+.btn:focus {
+    background-color: #fff;
+    color: #d71e3d;
+    box-shadow: 0 8px 24px 0 rgba(255, 255, 255, .2);
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #d71e3d;
+    box-shadow: 0 8px 24px 0 rgba(255, 255, 255, .2);
+}
+
+#image{
+    width: max-content;
+    height: max-content;
+}
+
+body{
+    background-image: url(Capture.PNG);
+  }
+
+.home img{
+    width: calc(100% - 20px);
+    height: 250px;
+    margin: 10px;
+}
+
+.NewsGrid{
+    margin: 10px;
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+
+.container-fluid{
+    width: 100%;
+}
+
+.popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+    display:none;
+  }
+  
+  .popup .content {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background:#fff;
+    width:500px;
+    height:250px;
+    z-index:2;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+    font-family:"Open Sans",sans-serif;
+  }
+
+  .popup .content p{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    right: 5%;
+    display: flex;
+  }
+  
+  .popup .close-btn {
+    cursor:pointer;
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:30px;
+    height:30px;
+    background:#222;
+    color:#fff;
+    font-size:25px;
+    font-weight:600;
+    line-height:30px;
+    text-align:center;
+    border-radius:50%;
+  }
+  
+  .popup.active .overlay {
+    display:block;
+  }
+  
+  .popup.active .content {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+  }
